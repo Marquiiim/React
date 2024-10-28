@@ -1,5 +1,9 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Peoples from './components/Peoples';
+import Frase from './components/Frase';
+import List from './components/List';
+import Item from './components/Item';
 
 function App() {
 
@@ -7,9 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Olá React!</h1>
-      <p>Meu Primeiro APP</p>
-      <HelloWorld />
+      <List />
+      <Frase />
+      <SayMyName nome="Marcos" />
+      <Peoples nome="Marcos" idade="18" profissao="Marceneiro"/>
     </div>
   );
 }
